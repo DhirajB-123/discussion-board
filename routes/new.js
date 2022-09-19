@@ -1,4 +1,5 @@
 var express = require('express');
+const { post } = require('.');
 var router = express.Router();
 const Post = require('../models/post')
 
@@ -19,8 +20,10 @@ router.get('/', function(req,res,next){
 })
 
 router.post('/', function(req,res,next){
-  console.log(req.body)
-  res.redirect('/')
+  let post = new Post(req.body)
+  post.save()
+    .then(res.redirect('/'))
+    .catch((err) => console.log(err))
 })
 
 module.exports = router;

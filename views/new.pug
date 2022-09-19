@@ -1,6 +1,8 @@
 extends layout 
 
 block content 
+    h1 new post 
+    a(href="/") discussion board 
     form(action="/new", method="post") 
         div 
             label(for="text") text
