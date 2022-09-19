@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 discussion board
+  a(href="/new") new post
+  ul 
+    each message in messages
+      div 
+        p #{message.text}
+        p #{message.user}
