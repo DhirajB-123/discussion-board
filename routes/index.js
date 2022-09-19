@@ -23,8 +23,4 @@ router.get('/', function(req, res, next) {
   // res.render('index', { title: "discussion board", messages: messages });
 });
 
-router.post('/', function(req, res, next){
-  console.log(req.body)
-})
-
 module.exports = router;
