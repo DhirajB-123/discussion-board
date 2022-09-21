@@ -1,4 +1,3 @@
 Online Discussion Board Site <br>
-Currently WIP <br>
-Need to add: <br>
-- css <br>
+Open the link and make a post! <br>
+immense-waters-06601.herokuapp.com/
